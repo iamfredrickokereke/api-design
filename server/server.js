@@ -2,7 +2,8 @@ const express = require('express');
 const app = express();
 const bodyParser = require('body-parser');
 const _ = require('lodash');
-require('colors')
+require('colors');
+const colors = require('colors/safe');
 const port = 6400;
 
 
@@ -30,12 +31,15 @@ app.get('/', (req, res) => {
 
 
 app.get('/names', (req, res) => {
-    res.json(names || json)    
+    res.json(names || json);
+    // colors.red(console.log(json))
+    console.log(`${json}`)
+    
 })
 
 
 app.listen(port, () => {
-    console.log(`Server is currently running on http://localhost:${port.yellow}`);
+    console.log(`Server is currently running on http://localhost:${port}`.bgRed);
     
 })
 

@@ -1,0 +1,9 @@
+{
+    // Below is the  model for our resource(data) to be consumed
+    "name": "simba",
+    "id": 1,
+    "Age": 0,
+    "Sex": "male"
+
+
+}

@@ -9,10 +9,14 @@ var json = { count : 10, message : 'hi json'}
 
 
 app.use(express.static('client'));
+app.use(bodyParser.urlencoded({extended: true}))
+app.use(bodyParser.json())
 
 
+var names = [];
+var id = 0;
 
-
+// creating the routes for the crud operation
 
 app.get('/', (req, res) => {
 
@@ -24,8 +28,8 @@ app.get('/', (req, res) => {
 })
 
 
-app.get('/data', (req, res) => {
-    res.json(json)    
+app.get('/names', (req, res) => {
+    res.json(names || json)    
 })
 
 

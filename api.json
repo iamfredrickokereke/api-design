@@ -16,7 +16,15 @@
    > stateless
    > directory like url pattern for routes
    > transfer of json / or xml files
-
-
 }
 
+
+// To diagram/model our resource we will have
+
+{
+    "Get /names": {
+        "desc":"return all names",
+        "response": "200, application/json",
+        "data", "[{}, {}, {}]"
+    }
+}

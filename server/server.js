@@ -8,6 +8,15 @@ const port = 6400;
 var json = { count : 10, message : 'hi json'}
 
 
+app.get('/', (req, res) => {
+
+    res.sendFile('../client/test.html', (err) =>{
+        if (err) {
+            res.status(500).send(err)
+        }
+    })
+})
+
 
 app.get('/data', (req, res) => {
     res.json(json)    

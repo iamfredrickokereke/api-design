@@ -10,7 +10,7 @@ var json = { count : 10, message : 'hi json'}
 
 app.get('/', (req, res) => {
 
-    res.sendFile('../client/test.html', (err) =>{
+    res.sendFile(__dirname +'/test.html', (err) =>{
         if (err) {
             res.status(500).send(err)
         }

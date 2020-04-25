@@ -1,5 +1,19 @@
+
+
+{ 
+    // it's important to know that ever REST API design must have or stick to these patterns
+ 
+    > http verbs => GET, POST, PUT, DELETE  => CRUD(CREATE, READ, UPDATE, DESTROY/DELETE)
+    > stateless
+    > directory like url pattern for routes
+    > transfer of json / or xml files
+
+     // Below is the  model for our resource(data) to be consumed
+ }
+ 
+
 {
-    // Below is the  model for our resource(data) to be consumed
+   
     "Name": "simba",
     "Id": 1,
     "Age": 0,
@@ -8,15 +22,6 @@
 
 
 },
-
-{ 
-   // it's important to know that ever REST API design must have or stick to these patterns
-
-   > http verbs => GET, POST, PUT, DELETE  => CRUD(CREATE, READ, UPDATE, DESTROY/DELETE)
-   > stateless
-   > directory like url pattern for routes
-   > transfer of json / or xml files
-}
 
 
 // To diagram/model our resource we will have
@@ -29,6 +34,24 @@
     }
 
     "Get /names/:id":{
+        "desc":"return all names",
+        "response": "200, application/json",
+        "data", "[{}, {}, {}]"
+    }
+
+    "POST /names/:id":{
+        "desc":"return all names",
+        "response": "200, application/json",
+        "data", "[{}, {}, {}]"
+    }
+
+    "PUT /names/:id":{
+        "desc":"return all names",
+        "response": "200, application/json",
+        "data", "[{}, {}, {}]"
+    }
+
+    "DELETE /names/:id":{
         "desc":"return all names",
         "response": "200, application/json",
         "data", "[{}, {}, {}]"

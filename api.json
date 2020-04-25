@@ -27,4 +27,10 @@
         "response": "200, application/json",
         "data", "[{}, {}, {}]"
     }
+
+    "Get /names/:id":{
+        "desc":"return all names",
+        "response": "200, application/json",
+        "data", "[{}, {}, {}]"
+    }
 }

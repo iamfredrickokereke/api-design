@@ -1,16 +1,14 @@
-
-
 { 
     // it's important to know that ever REST API design must have or stick to these patterns
  
-    > http verbs => GET, POST, PUT, DELETE  => CRUD(CREATE, READ, UPDATE, DESTROY/DELETE)
+    > http verbs => GET, POST, PUT, DELETE  => CRUD => CREATE, READ, UPDATE, DESTROY/DELETE
     > stateless
     > directory like url pattern for routes
     > transfer of json / or xml files
 
-     // Below is the  model for our resource(data) to be consumed
- }
+ },
  
+//  Below is the  model for our resource(data) to be consumed
 
 {
    
@@ -31,29 +29,29 @@
         "desc":"return all names",
         "response": "200, application/json",
         "data", "[{}, {}, {}]"
-    }
+    },
 
     "Get /names/:id":{
         "desc":"return all names",
         "response": "200, application/json",
-        "data", "[{}, {}, {}]"
-    }
+        "data":{}
+    },
 
-    "POST /names/:id":{
-        "desc":"return all names",
+    "POST /names/":{
+        "desc":" create and return a new name using the posted object  as the name",
         "response": "200, application/json",
-        "data", "[{}, {}, {}]"
-    }
+        "data":{}
+    },
 
     "PUT /names/:id":{
-        "desc":"return all names",
+        "desc":"updates and returns the matching names with the posted update object",
         "response": "200, application/json",
-        "data", "[{}, {}, {}]"
-    }
+        "data": {}
+    },
 
     "DELETE /names/:id":{
-        "desc":"return all names",
+        "desc":"deletes and returns the names",
         "response": "200, application/json",
-        "data", "[{}, {}, {}]"
+        "data": {}
     }
 }

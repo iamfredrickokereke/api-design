@@ -8,6 +8,9 @@ const port = 6400;
 var json = { count : 10, message : 'hi json'}
 
 
+app.use(express.static('client'));
+
+
 
 
 

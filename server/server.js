@@ -1,7 +1,6 @@
 const express = require('express');
 const app = express();
 const bodyparser = require('body-parser');
-
 const lodash = require('lodash');
 const port = 6400;
 

@@ -2,6 +2,7 @@ const express = require('express');
 const app = express();
 const bodyParser = require('body-parser');
 const _ = require('lodash');
+require('colors')
 const port = 6400;
 
 
@@ -34,7 +35,7 @@ app.get('/names', (req, res) => {
 
 
 app.listen(port, () => {
-    console.log(`Server is currently running on http://localhost:${port}`);
+    console.log(`Server is currently running on http://localhost:${port.yellow}`);
     
 })
 
